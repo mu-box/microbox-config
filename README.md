@@ -1,4 +1,4 @@
-# Nanobox Config
+# Microbox Config
 
 Parses config files and command line arguments into a singe map for ease of use. The config file is parsed first and layered over the default map, then the command line arguments are layered over that.
 
@@ -10,7 +10,7 @@ The resultant map contains defaults specified in the code, replacements from the
 package main
 
 import (
-  config "github.com/nanobox-io/nanobox-config"
+  config "github.com/mu-box/microbox-config"
   "os"
 )
 
@@ -35,5 +35,5 @@ $ ./program ./test.config -key=value
   "key": "value"
   "path": "testing"
   "default": "true"
-} 
+}
 ```
